@@ -1,11 +1,11 @@
 # This file is auto-generated during the composer install
 parameters:
     database_driver: pdo_mysql
-    database_host: 127.0.0.1
-    database_port: null
-    database_name: symfony
-    database_user: root
-    database_password: null
+    database_host: ds033317.mongolab.com
+    database_port: 33317
+    database_name: heroku_app26509927
+    database_user: heroku_app26509927
+    database_password: g73r6li5pl745n8f3361b1gp37
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
