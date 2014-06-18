@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <section class="name column">
+        <h1><a href="{{ path('the_comet_cult_community_homepage') }}">Tech City Says No!</a></h1>
+    </section>
+    {{ render(controller('TheCometCultCommunityBundle:Home:membersCounter')) }}
+    <section class="join column">
+        <h3>2 clicks is all it takes!</h3>
+        <p>We believe that Tech City is becoming a home for the wrong sort of developers, and we're passionate about maintaining the style, charm and unique nature of Tech City.</p>
+        <a href="#" class="button">Tech City Says No!</a>
+    </section>
+    <nav class="menu column">
+        <ul class="pages">
+            <li><a href="{{ path('the_comet_cult_community_about') }}">About</a></li>
+            <li><a href="mailto:benjamin@keeptechcityweird.com">Contact</a></li>
+            <li><a href="https://www.facebook.com/keeptechcityweird">Facebook</a></li>
+            <li><a href="https://twitter.com/keeptechcityweird">Twitter</a></li>
+        </ul>
+    </section>
+</div>
+{{ render(controller('TheCometCultCommunityBundle:Home:membershipForm')) }}

@@ -1,0 +1,26 @@
+language: php
+
+php:
+    - 5.4
+    - 5.5
+
+branches:
+    only:
+        - develop
+
+services: mongodb
+
+before_script:
+    - echo '' > ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
+    - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    - cp app/config/config.yml.dist app/config/config.yml
+    - composer install --no-interaction --prefer-source
+
+script:
+    - bin/behat @TheCometCultCommunityBundle
+    - bin/phpspec run
+notifications:
+    email:
+        - ks@thecometcult.com
+        - jrl@thecometcult.com
+        - mm@thecometcult.com
