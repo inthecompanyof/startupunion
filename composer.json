@@ -50,11 +50,7 @@
         },
         "branch-alias": {
             "dev-master": "2.4-dev"
-        }
-
-
-{
-    "extra": {
+        },
         "heroku": {
             "document-root": "web",
             "php-config": [
@@ -63,8 +59,7 @@
                 "short_open_tag=off"
             ]
         }
-    }
-}
+
 
     },
     "require-dev": {
